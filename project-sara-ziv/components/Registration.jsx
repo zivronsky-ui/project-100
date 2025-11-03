@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import BasicGame from "./BasicGame";
+import Boards from "./Boards";
 function Registration() {
   const [nameValue, setNameValue] = useState("");
   const [isStart, setIsStart] = useState(false);
@@ -22,14 +23,22 @@ function Registration() {
   }
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input name="name" />
-        <button type="submit">Add person</button>
-      </form>
-      <button onClick={startGame}>Start</button>
+      <div id="addPerson">
+        <form onSubmit={handleSubmit}>
+          <input name="name" />
+          <button type="submit">Add person</button>
+        </form>
+        {/* {isStart ? ( */}{" "}
+        <button style={{ display: "none" }} onClick={startGame}>
+          Start{" "}
+        </button>
+        {/* ) : ( */}
+        <button onClick={startGame}>Start</button>
+        {/* )} */}
+      </div>
       {isStart ? (
         <div>
-          <BasicGame />
+          <Boards />
         </div>
       ) : null}
     </>

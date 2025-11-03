@@ -33,9 +33,14 @@ function BasicGame({ isActive, onTurnEnd }) {
   };
 
   const win = () => {
-    window.alert("You win!");
+    // window.alert("You win!");
+    const result = confirm("ניצחת! האם תרצה משחק נוסף??");
+    if (result) {
+      window.location.reload();
+    } else {
+      alert("byee");
+    }
     localStorage.setItem(initGameNumber, score); //key should be username
-    window.location.reload();
   };
 
   const winCheck = () => {
@@ -47,16 +52,20 @@ function BasicGame({ isActive, onTurnEnd }) {
 
   return (
     <>
-      <p>Current number: {gameNumber}</p>
-      <p>Score: {score}</p>
-      {isActive && (
-        <>
-          <button onClick={add}>+1</button>
-          <button onClick={minus}>-1</button>
-          <button onClick={multiply}>*2</button>
-          <button onClick={divide}>/2</button>
-        </>
-      )}
+      <div id="theGame">
+        <div id="board">
+          <p>Current number: {gameNumber}</p>
+          <p>Score: {score}</p>
+          {isActive && (
+            <>
+              <button onClick={add}>+1</button>
+              <button onClick={minus}>-1</button>
+              <button onClick={multiply}>*2</button>
+              <button onClick={divide}>/2</button>
+            </>
+          )}
+        </div>
+      </div>
     </>
   );
 }

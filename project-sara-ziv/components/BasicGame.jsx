@@ -52,4 +52,5 @@ function BasicGame() {
 // if number === 100 : game over
 // numberOfMoves s saved to ls
 // */
+
 export default BasicGame;

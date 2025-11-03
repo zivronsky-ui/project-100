@@ -13,7 +13,6 @@ function Registration() {
     setNameValue(inputValue);
     setUserArr([...userArr, inputValue]);
     console.log(inputValue);
-
     console.log(userArr);
     console.log(userArr.length);
   }
@@ -33,9 +32,7 @@ function Registration() {
           <BasicGame />
         </div>
       ) : null}
-      {/* <a src="/BasicGame">start</a> */}
     </>
   );
 }
-// status =
 export default Registration;

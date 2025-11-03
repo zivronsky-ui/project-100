@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import BasicGame from "./BasicGame";
 
-
 function Boards() {
   const [turn, setTurn] = useState(0);
   const changeTurn = () => {

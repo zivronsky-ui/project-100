@@ -60,14 +60,5 @@ function BasicGame({ isActive, onTurnEnd }) {
     </>
   );
 }
-<<<<<<< HEAD
-// /*
-// person gets number between 0 and 99
-// four buttons one to add ~number~, one to subtract ~number~, one to multiply by 2, one to divide by 2 (bigger of the two when original number is odd)
-// if number === 100 : game over
-// numberOfMoves s saved to ls
-// */
-=======
->>>>>>> 21c72f8b2e787e64bd6381bd0a647ada18c66305
 
 export default BasicGame;

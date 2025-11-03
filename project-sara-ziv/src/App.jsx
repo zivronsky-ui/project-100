@@ -7,9 +7,9 @@ import Boards from "./components/Boards";
 function App() {
   return (
     <>
-      <Registration />
-      {/* <BasicGame /> */}
+      {/* <Registration /> */}
       <Boards />
+      {/* <AddPerson /> */}
     </>
   );
 }

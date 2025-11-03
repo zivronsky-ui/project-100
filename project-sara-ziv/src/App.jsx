@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       {/* <Registration /> */}
-      / <Boards />
+      <Boards />
       {/* <AddPerson /> */}
     </>
   );

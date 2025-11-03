@@ -10,7 +10,9 @@ function Registration() {
     event.target.reset();
     setNameValue(inputValue);
     console.log(inputValue);
-    setUserArr(
+    setUserArr(ber: 36
+
+Score: 0
       userArr.push({ name: inputValue, score: 0, status: "wait for your turn" })
     );
     // userArr.map((user)=>{})
@@ -27,6 +29,6 @@ function Registration() {
       </>
     );
   }
-  export default Registration;
 }
 // status =
+export default Registration;
